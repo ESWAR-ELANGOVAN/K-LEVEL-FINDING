@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2 align="center">Revised Bloom's Taxonomy Action Verbs</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for key word.." title="Type a Key word">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Key Words</th>
+    <th style="width:40%;">K levels</th>
+  </tr>
+  <tr>
+    <td>Choose</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Define</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Find</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>How</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Label</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>List</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Match</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Omit</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Recall</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Relate</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Select</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Show</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Spell</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Tell</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>What</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>When</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Where</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Which</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Who</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Why</td>
+    <td>K 1</td>
+  </tr>
+  <tr>
+    <td>Classify</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Compare</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Contrast</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Demonstrate</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Explain</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Extend</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Illustrate</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Infer</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Interpret</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Outline</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Relate</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Rephrase</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Show</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Summarize</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Translate</td>
+    <td>K 2</td>
+  </tr>
+  <tr>
+    <td>Apply</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Build</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Choose</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Construct</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Develop</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Experiment with</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Identify</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Interview</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Make use of</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Model</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Organize</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Plan</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Select</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Solve</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Utilize</td>
+    <td>K 3</td>
+  </tr>
+  <tr>
+    <td>Analyze</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Assume</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Categorize</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Classify</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Compare</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Conclusion</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Contrast</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Discover</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Dissect</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Distinguish</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Divide</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Examine</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Function</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Inference</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Inspect</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>List</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Motivate</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Relationships</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Simplify</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Survey</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Take part in</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Test for</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Theme</td>
+    <td>K 4</td>
+  </tr>
+  <tr>
+    <td>Agree</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Appraise</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Assess</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Award</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Choose</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Compare</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Conclude</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Criteria</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Criticize</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Decide</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Deduct</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Defend</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Determine</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Disprove</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Estimate</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Evaluate</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Explain</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Importance</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Influence</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Interpret</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Judge</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Justify</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Mark</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Measure</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Opinion</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Perceive</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Prioritize</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Prove</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Rate</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Recommend</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Rule on</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Select</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Support</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Value</td>
+    <td>K 5</td>
+  </tr>
+  <tr>
+    <td>Adapt</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Build</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Change</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Choose</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Combine</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Compile</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Compose</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Construct</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Create</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Delete</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Design</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Develop</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Discuss</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Elaborate</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Estimate</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Formulate</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Happen</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Imagine</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Improve</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Invent</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Make up</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Maximize</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Minimize</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Modify</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Original</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Originate</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Plan</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Predict</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Propose</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Solution</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Solve</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Suppose</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Test</td>
+    <td>K 6</td>
+  </tr>
+  <tr>
+    <td>Theory</td>
+    <td>K 6</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
